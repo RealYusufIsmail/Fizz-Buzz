@@ -7,9 +7,11 @@ public class Main {
 
           if (checkIfMultipleOfThree(i)) System.out.println("Fizz");
 
-          if (checkIfMultipleOfFive(i)) System.out.println("Buzz");
+          else if (checkIfMultipleOfFive(i)) System.out.println("Buzz");
 
-          if (checkIfMultipleOfThree(i) && checkIfMultipleOfFive(i)) System.out.println("FizzBuzz");
+          else if (checkIfMultipleOfThree(i) && checkIfMultipleOfFive(i)) System.out.println("FizzBuzz");
+
+          else System.out.println(i);
        }
     }
 
