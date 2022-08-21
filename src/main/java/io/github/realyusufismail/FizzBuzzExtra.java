@@ -5,24 +5,17 @@ public class FizzBuzzExtra {
         for (int i = 0; i <= 100; i++) {
             //make it shorter using StringBuilder
             StringBuilder sb = new StringBuilder();
-            //make it shorter using StringBuilder
-            
 
-            if (i % 6 == 0 && i % 9 == 0 && i % 5 == 0) sb.append("FizzBuzz + Bar + Baz");
-            else if (i % 6 == 0 && i % 5 == 0) sb.append("FizzBuzzBar");
-            else if (i % 3 == 0 && i % 5 == 0) sb.append("FizzBuzz");
-            else if (i % 6 == 0 && i % 9 == 0) sb.append("Fizz + Bar + Baz");
-            else if (i % 6 == 0) sb.append("Bar");
-            else if (i % 9 == 0) sb.append("Baz");
-            else if (i % 3 == 0) sb.append("Fizz");
-            else if (i % 5 == 0) sb.append("Buzz");
-            else sb.append(i);
+            //check if number i is divisible by 6 or 9 or 3 and 5 and adds it to the StringBuilder
+            //Then prints all together
+            if (i % 6 == 0) sb.append("Bar");
+            if (i % 9 == 0) sb.append("Baz");
+            if (i % 3 == 0) sb.append("Fizz");
+            if (i % 5 == 0) sb.append("Buzz");
+            //check if it is empty and if true print the number
+            if (sb.length() == 0) sb.append(i);
 
-            System.out.println(sb.toString());
-
-            //need one if per condition
-            var sb2 = new StringBuilder();
-
+            System.out.println(sb);
         }
     }
 }
